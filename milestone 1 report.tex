@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{{./Figures/}}
+\usepackage[margin=0.5in]{geometry}
 
 \title{Milestone 1}
 \author{Jack Byrnes, Raymond Ly}
@@ -11,12 +12,64 @@
 \begin{document}
 \maketitle
 \tableofcontents
-
 \section{UI and UX design}
+We designed our user interface in three steps:
+\begin{enumerate}
+\item In our competitive analysis, we found strengths and weaknesses in other websites that we would implement and avoid, respectively. 
+\item We assessed all of the queries that our user should be able to complete for each level using our website.
+\item We came up with a list of elements that would need to be on each page and brainstormed alternative layouts. We then drew a design each for each of the levels, keeping with Nielson's Design Heuristics (Nielson \& Molich 1990) and the requirements of our user (ie what queries they should be able to ask).
+\end{enumerate}
+Below are the designs of each page with accompanying explanations of design choices, using Nielson's heuristics and personae.
+\subsection{Level 1}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.8]{LandingPage.jpg} 
+\caption{The landing page of the website}
+\label{fig:erdiagram}
+\end{figure}
+The first feature, outlined in green, is a box that the user can click on to get through to the big picture page. Alternatively, the user can do the same thing in an interactive way by typing an answer into the text box to the question prompted and clicking on the arrow button. As Douglas’ goal is to learn more about homelessness, this allows him to test his understanding and facilitate his own learning.
 
+The second feature, outlined in orange, is another box that users can click through to get to the shallow glance at homelessness page. It is populated with text that explains what data they will find on this page. A drop-down box following text that prompts the customer to choose their local government area and allows personalised results by clicking on the arrow button. This is especially helpful for Douglas, whose goal is to learn more about homelessness and how he can get involved, specifically in his own community.
 
+The third feature, outlined in yellow, is another box that users can click through to go to fill out a form that then provides the user with a deeper dive into the data of homelessness. It has graphics to indicate what type of filters will be available to them in the form itself.
+
+These boxes follow Neilson’s Consistency and Standards heuristic, allowing users to intuit that each box serves different functions. The arrows (coloured in green) align with Neilson’s Match Between System and the Real World heuristic, as it is commonly understood that arrows mean forward or to go, making users like Douglas who lack technical experience to use this feature. Identified as a strength in StreetSmart Australia’s website were the subtle call-to-actions at any point in the browsing experience, replicated in the arrows. Making our features consistent throughout the page minimises the user’s need to learn how to use the web page, as Neilson’s Recognition or Recall heuristic describes.
+\subsection{Level 2}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.8]{level2inner.jpg} 
+\caption{The result section of the level two page}
+\label{fig:erdiagram}
+\end{figure}
+The features that will be explained are those encased in the blue box, which form the result screen where users will see data and information, where the users have already chosen their search specifications.
+
+The first feature, on the left side of the result box, will return the information they have searched for. By default, it provides all aggregated data of homeless people in Australia. If a state is selected, those details will populate. If an LGA is selected, it will appear at the top of the box and the corresponding state below.
+
+The second feature, outlined in yellow, is a ranking table on the right of the result box. It corresponds with the filters chosen and the main information displayed on the left. Immediately, they can see how their LGA or state ranks in terms of total homeless numbers with filters applied. They can also choose to see the list in ascending or descending order.
+
+The chosen local government area and/or state are highlighted through coloured text in the ranking table, meeting Neilson’s Visibility of System Status heuristic, where the user can receive feedback as they switch between different LGAs. The colour corresponds to other areas of the screen, meeting Neilson’s Consistency and Standards heuristic, in which the continuity allows users to easily find related information.
+
+The ranking feature, separated to the side and is smaller compared to the main information table, presents information to users like Douglas, who is only seeking basic information about their community, while also being useful to Lisa, looking for comparative data for her assignment. This describes Neilson’s Flexibility and Efficiency of Use, where the basic user remains uninhibited while the more advanced user can draw some deeper insight.
+\subsection{Level 3}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.8]{level3results.jpg} 
+\caption{The results page of level 3}
+\label{fig:erdiagram}
+\end{figure}
+This page serves to provide all the information that the user has requested in the form, in the form of a table.
+
+The first feature is the results table, outlined in green. It is displayed in the middle of the page and expands outwards if more information has been requested in the form. It displays the LGA on the left as fixed and the table columns depend on user specification in the form page. The red button allows sorting in that column in ascending or descending order. It takes advantage of negative space to focus on the data the user has come for. Neilson’s Aesthetic and Minimalist design heuristic is displayed here through the absence any irrelevant information to increase the visibility of the table.
+
+The specifications of the form are displayed in the second feature, outlined in blue. Having the options listed out in this way provides the user with Visibility of System Status, reminding them of the options that they have chosen and allows for review if required. This keeps them informed about exactly what they are seeing in the first feature.
+
+The user can return to the form through the third feature, the back arrow, to edit their specifications to adjust the table. This provides the user with User Control and Freedom where Neilson describes allowing the user to quickly and simply return in case an error was made.
+
+The table and the specifications can be exported for reference. Lisa, who is doing research on homelessness for her assignment, easily adjusts her preferences and is informed of her specifications until she is satisfied with the table of information and can export it for her own reference.
+
+The user also has the option to return to the home page through the floating home button on the top left, at any point on the website, or navigate to other pages through the navigation drop down bar on the top right, extending on the User Control and Freedom heuristic.
 \section{Database design}
-It was necessary to design a database to allow our website to provide the information the user wants. A user must be able to make relational data queries such as 'show me the homeless ratio in LGA's that have a median weekly income lower than \$500'. We could have all of the information for the LGA's in the one table, with every attribute of that LGA in it's own column (eg. '2016\_homeless\_f\_0\_9' amount of female homeless people who are aged 0-9 in that LGA in 2016). With the current data we have, we would need 45 columns with that database design. \\
+It was necessary to design a database to allow our website to provide the information the user wants. A user must be able to make relational data queries such as 'show me the homeless ratio in LGA's that have a median weekly income lower than \$500'. We could have all of the information for the LGA's in the one table, with every attribute of that LGA in it's own column (eg. '2016\_homeless\_f\_0\_9' amount of female homeless people who are aged 0-9 in that LGA in 2016). With the current data we have, we would need 45 columns with that database design. 
 
 A table with 45 columns is manageable and if we did not want this project to be scalable, this design would be fine. We want the database to grow as more research is conducted however, and we would be starting to add columns to our database if all the information was in one table. This would require the database to make a copy of the table with the new columns, transfer all of the previous entries and delete the original. The amount of columns in the table would also become more and more unmanageable as more research data becomes available. If we split the data up into multiple tables we avoid this issue and any new data is added as new data entries (rows) without having to do a complete restructure.
 
@@ -38,7 +91,7 @@ Homeless/AtRisk(\underline{lga\_code*, year}, **homeless\_f\_0\_9 ... unknown\_m
 
 \emph{**Note}: The Homeless/AtRisk entity has attributes between the ellipses. Each attribute is an integer amount of the people that meet the conditions stated. For example, the attribute 'homeless\_f\_0\_9' corresponds to people who are homeless, female and between the ages 0 and 9 inclusive. If this attribute were '7', the year attribute '2016' and the lga\_code was the code corresponding to Sunbury, it would mean there were 7 homeless female people aged 0-9 in 2016.\\
 
-The database modelled in figure \ref{fig:erdiagram} enable the website to deliver any information that the user needs. As an example, lets look at how the database would work for a query. To illustrate it's capability we will choose a complex query:\\
+The database modelled in figure \ref{fig:erdiagram} enable the website to deliver any information that the user needs. As an example, lets look at how the database would work for a query. To illustrate it's capability we will choose a complex query:
 
 \textbf{Query:} What is the ratio of homeless people against the total population in LGA's where the median weekly income is under \$500. We will assume the user wants the most recent data available and only use data from 2018
 These are the steps that are needed in order to answer this query with the data that we have:
@@ -91,5 +144,12 @@ To produce this table, our database and Java will work in collaboration (in pseu
 \item Divide result of 3. by the result of 2 and insert this result into column two of the created table.
 \item Divide the 2018 and 2016 populations in the Population table and insert this into the third column.
 \end{enumerate}
-Each of the columns will match up with an LGA because all of the tables are sorted by lga\_code.
+Each of the columns will match up with an LGA because all of the tables are sorted by lga\_code. \\
+\textbf{Possible further database features}: \\
+Currently we are unsure how we are going to save the level 3 form data for when the user wants to change their query. It may be that we can use html for this but we might have to create a table in the database that stores information on what the user selected in the form. There would be a column for each possible value of every input the user selects. \\
+
+\section{References}
+Nielsen, Jakob, and Rolf Molich. “Heuristic Evaluation of User Interfaces.” Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, 1990. 249–256. Web. \\
+
+
 \end{document}
