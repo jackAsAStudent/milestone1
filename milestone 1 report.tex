@@ -80,5 +80,16 @@ INSERT INTO [LGA]\\
 SELECT lga\_code, lga\_name FROM Population;
 \item Remove the column containing the LGA names from all tables excluding [LGA]. This can be done in a couple of ways, we chose to use the GUI.
 \end{enumerate}
-
+To test our database, we wrote SQL scripts corresponding to the queries that are available to the user. Our database will work in conjunction with Java to return the result: \\
+\textbf{Query:} Show me how the rate of homelessness has changed between 2016 and 2018 in all LGA's compared to population.\\
+A table with these three columns will be able to show the user this information: lga\_name, percentage change in the ratio of homeless people to the total population and the percentage change in population. To see the trend, the user can sort by the third column and then notice the change in numbers in the second column. The user can also easily see any net relationship by referring to the 'total' row at the top of the table, which will show a total change in the homeless ratio and the total change in population across the LGA's. \\
+To produce this table, our database and Java will work in collaboration (in pseudocode):
+\begin{enumerate}
+\item Create a new table with the columns detailed above and insert lga\_names from the LGA table into the first column.
+\item For each LGA (row), sum all of the columns that refer to homeless people in the Homeless/AtRisk table where the year = 2016.
+\item Do the same where the year = 2018.
+\item Divide result of 3. by the result of 2 and insert this result into column two of the created table.
+\item Divide the 2018 and 2016 populations in the Population table and insert this into the third column.
+\end{enumerate}
+Each of the columns will match up with an LGA because all of the tables are sorted by lga\_code.
 \end{document}

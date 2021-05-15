@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.14)  15 MAY 2021 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.14)  15 MAY 2021 12:34
 entering extended mode
 **"./milestone 1 report.tex"
 (milestone 1 report.tex
@@ -151,7 +151,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-[2 <./Figures//ERDiagram.jpg>] [3] [4] (milestone 1 report.aux) ) 
+[2 <./Figures//ERDiagram.jpg>] [3]
+Overfull \hbox (3.4773pt too wide) in paragraph at lines 88--89
+[]\OT1/cmr/m/n/12 Create a new ta-ble with the columns de-tailed above and in-s
+ert lga[]names
+ []
+
+[4] (milestone 1 report.aux) ) 
 Here is how much of TeX's memory you used:
  1253 strings out of 479173
  20221 string characters out of 2851267
@@ -160,14 +166,14 @@ Here is how much of TeX's memory you used:
  408975 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,6n,62p,739b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\jac
-k byrnes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C
-:/Users/jack byrnes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><C:/Users/jack byrnes/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Users/jack byrnes/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jack byrnes/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "milestone 1 report.pdf" (4 pages, 137003 bytes).
+ <C:\Users\jack byrnes\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/jack byrnes/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jack byrnes/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/jack byrnes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Users/jack byrnes/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on "milestone 1 report.pdf" (4 pages, 138670 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
